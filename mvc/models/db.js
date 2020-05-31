@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 
 let uri = 'mongodb://localhost/the_supers';
 
-if (process.env.NODE_ENV === 'production') {
-    uri = process.env.MONGODB_URI;
-}
+// if (process.env.NODE_ENV === 'production') {
+//     uri = process.env.MONGODB_URI;
+// }
 
 
 mongoose.connect(uri, {
